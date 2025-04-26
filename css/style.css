@@ -1,6 +1,4 @@
-
 /*** Spinner Start ***/
-/*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -568,65 +566,6 @@
 }
 /*** Services End ***/
 
-/*** Fact Counter ***/
-.counter {
-    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 22, 89, 1)), url(../img/counter.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.counter .counter-btn:hover {
-    background: var(--bs-white);
-    color: var(--bs-secondary);
-}
-
-.counter .counter-box {
-    padding-right: 20px; 
-    padding-bottom: 20px;
-}
-
-.counter .counter-item {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.counter .counter-item .counter-item-style {
-    position: absolute;
-    width: calc(100% - 20px);
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--bs-secondary);
-    z-index: 2;
-}
-
-.counter .counter-item .counter-item-inner {
-    position: relative;
-    top: 20px;
-    left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background: var(--bs-white);
-    box-shadow: 20px 20px rgba(255, 94, 21, 1);
-    z-index: 3;
-}
-
-.counter .counter-item .counter-counting {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: var(--bs-primary);
-    font-size: 30px;
-}
-/*** Fact Counter ***/
-
 /*** Contact Start ***/
 .contact .contact-map {
     position: relative;
@@ -694,11 +633,45 @@
 }
 /*** Footer End ***/
 
+/*** Clients Start ***/
+.sponsor-section {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+  
+.sponsor-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+  
+.sponsor-item {
+    flex: 0 1 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.sponsor-item img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+  
+.sponsor-item img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+/*** Clients End ***/
+
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark);
 }
 /*** copyright end ***/
-
-
